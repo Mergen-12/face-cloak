@@ -32,6 +32,7 @@ Main Methods and Workflows:
   * Handles boundary cases like invalid bounding boxes or faces outside image bounds.
 
 Usage:
+
 Install the necessary libraries
 ``` pip install -r requirements.txt ```
 Change the line into your own image at main.py line number 49 ```self.face_swapper = FaceSwapper(src_image_path="images/photo.png")``` 
