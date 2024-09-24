@@ -35,7 +35,11 @@ Usage:
 
 Install the necessary libraries
 ``` pip install -r requirements.txt ```
-Change the line into your own image at main.py line number 49 ```self.face_swapper = FaceSwapper(src_image_path="images/photo.png")``` 
+
+Change the line into your own image at main.py line number 49 
+
+```self.face_swapper = FaceSwapper(src_image_path="images/photo.png")``` 
+
 make sure to add png or jpg extensions
 
 ![gui](https://github.com/user-attachments/assets/22e744ab-ad8e-48e8-a844-7d7af4223313)
