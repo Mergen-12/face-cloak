@@ -1,7 +1,9 @@
 Project Overview:
+
 This project aims to develop a face-swapping tool for anonymizing facial features in video streams. By using OpenCV for image processing and MediaPipe FaceMesh for facial landmark detection, the program detects faces, triangulates their features, and seamlessly swaps them for anonymization. This approach addresses privacy concerns, especially in applications like self-driving cars and public surveillance cameras.
 
 Key Components:
+
   * OpenCV: For video frame capture, image manipulation, and rendering.
   * MediaPipe FaceMesh: To detect facial landmarks, enabling precise feature identification.
   * Triangulation and Warping: Using Delaunay triangulation to map facial features and warp triangles from one face to another.
