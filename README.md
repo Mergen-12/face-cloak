@@ -12,15 +12,19 @@ Main Methods and Workflows:
   a. Facial Landmark Detection (get_landmark_points)
   * Detects facial landmarks using MediaPipe and converts the coordinates to pixel values.
   * Handles cases where no face is detected or too many faces are found by exiting or skipping frames.
+  
   b. Delaunay Triangulation (get_triangles)
   * Uses Delaunay triangulation to divide facial landmarks into triangles.
   * Helps map source face triangles to destination face triangles for accurate warping.
+  
   c. Triangulation and Warping (triangulation, warp_triangle)
   * Each triangle from the source face is extracted, masked, and warped to fit the corresponding triangle in the destination face.
   * Ensures that the warped triangles align with the facial structure of the destination image.
+  
   d. Adding Warped Triangles (add_piece_of_new_face)
   * After warping, each triangle is blended seamlessly into the new face.
   * This method ensures consistency in appearance by using masking techniques to apply the triangle precisely.
+  
   e. Final Face Swap (swap_new_face)
   * Combines the newly warped face with the destination face using seamless cloning, ensuring a natural and unobtrusive transition.
   * Handles boundary cases like invalid bounding boxes or faces outside image bounds.
