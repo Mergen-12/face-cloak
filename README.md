@@ -8,6 +8,7 @@ Key Components:
   * Error Handling: Mechanisms to deal with missing or invalid facial data to ensure the system remains robust.
 
 Main Methods and Workflows:
+  
   a. Facial Landmark Detection (get_landmark_points)
   * Detects facial landmarks using MediaPipe and converts the coordinates to pixel values.
   * Handles cases where no face is detected or too many faces are found by exiting or skipping frames.
